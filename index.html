@@ -35,7 +35,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+               <div class="carousel-item active">
                     <div class="circulo"></div>
                     <img src="img/mascotas_banner.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block img1">
@@ -94,39 +94,73 @@
 
             <h2>Encontrá a tu Mascota</h2>
 
-            <form action="" method="post">
-                <label for="especie">Especie</label>
-                <select name="especie" id="especie">
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                </select>
+            <form action="procesar.php" method="post">
+                
+                    <label for="especie">Especie
+                        <select name="especie" id="especie">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </label>
 
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
-                    <option value="macho">Macho</option>
-                    <option value="hembra">Hembra</option>
-                </select>
+                    <label for="sexo">Sexo
+                        <select name="sexo" id="sexo">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="macho">Macho</option>
+                            <option value="hembra">Hembra</option>
+                        </select>
+                    </label>
 
-                <label for="edad">Sexo</label>
-                <select name="edad" id="edad">
-                    <option value="0">Menos de 1 año</option>
-                    <option value="1">1 año</option>
-                    <option value="2">2 años</option>
-                    <option value="3">3 años</option>
-                    <option value="4">4 años</option>
-                    <option value="5">5 años</option>
-                    <option value="6">6 años</option>
-                    <option value="7">7 años</option>
-                    <option value="8">8 años</option>
-                    <option value="9">9 años</option>
-                    <option value="10">10 años</option>
-                    <option value="11">11 años</option>
-                    <option value="12">12 años</option>
-                    <option value="13">13 años</option>
-                    <option value="14">14 años</option>
-                    <option value="15">15 años</option>
-                    <option value="15oMas">+ 15 años </option>
-                </select>
+                    <label for="edad">Edad
+                        <select name="edad" id="edad">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="0">Menos de 1 año</option>
+                            <option value="1">1 año</option>
+                            <option value="2">2 años</option>
+                            <option value="3">3 años</option>
+                            <option value="4">4 años</option>
+                            <option value="5">5 años</option>
+                            <option value="6">6 años</option>
+                            <option value="7">7 años</option>
+                            <option value="8">8 años</option>
+                            <option value="9">9 años</option>
+                            <option value="10">10 años</option>
+                            <option value="11">11 años</option>
+                            <option value="12">12 años</option>
+                            <option value="13">13 años</option>
+                            <option value="14">14 años</option>
+                            <option value="15">15 años</option>
+                            <option value="15oMas">+ 15 años </option>
+                        </select>
+                    </label>
+
+                    <label for="color">Color
+                        <select name="color" id="color">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="todos">Todos</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="marron">Marrón Claro</option>
+                            <option value="gris">Gris</option>
+                        </select>
+                    </label>
+
+                    <label for="manchas">Manchas / Rayas
+                        <select name="manchas" id="manchas">
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="todos">Todos</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="marron">Marrón Claro</option>
+                            <option value="gris">Gris</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Buscar">
+                
+
             </form>
         </section>
 
