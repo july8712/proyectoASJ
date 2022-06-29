@@ -215,3 +215,36 @@ input[type=submit]{
     /* margin-top: 30px; */
     background-color: rgb(252, 229, 200);
 }
+
+.fa-arrow-alt-circle-up:before, .fa-circle-up:before{
+    color: #ef5030;
+    font-size: 65px;
+    position: fixed;
+    bottom:40px;
+    right: 20px;
+}
+
+.fa-solid:hover{
+    color: #baa8a0;
+}
+
+footer{
+    background-color: #363636;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+.redes{
+    color: #f19f1f;
+}
+
+.redes h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
