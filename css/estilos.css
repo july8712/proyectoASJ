@@ -216,12 +216,15 @@ input[type=submit]{
     background-color: rgb(252, 229, 200);
 }
 
-.fa-arrow-alt-circle-up:before, .fa-circle-up:before{
-    color: #ef5030;
-    font-size: 65px;
+#subir{
     position: fixed;
     bottom:40px;
     right: 20px;
+}
+
+#subir i{
+    color: #ef5030;
+    font-size: 65px;
 }
 
 .fa-solid:hover{
@@ -230,21 +233,47 @@ input[type=submit]{
 
 footer{
     background-color: #363636;
-    color: white;
+    color: rgb(252, 229, 200);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 30px 0;
+    font-size: 1.3rem;
 }
 
-footer ul li{
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos li, .redes ul li{
     list-style-type: none;
+}
+.datos li i{
+    margin-right: 10px;
+    color: #f19f1f;
 }
 
 .redes{
     color: #f19f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .redes h3{
     font-size: 2rem;
     font-weight: 700;
+}
+
+.redes ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes ul li {
+    font-size: 2rem;
 }
