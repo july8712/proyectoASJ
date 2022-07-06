@@ -7,7 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <p>texto</p>
+    <span>Especie: </span>
         <?php echo htmlspecialchars($_POST['especie'])?>
+    <br>
+    <span>Sexo: </span>
+        <?php echo htmlspecialchars($_POST['sexo'])?>
+    <br>
+    <span>Edad: </span>
+        <?php echo htmlspecialchars($_POST['edad'])?>
+    <br>
+    <span>Color: </span>
+        <?php echo htmlspecialchars($_POST['color'])?>
+    <br>
+    <span>Manchas: </span>
+        <?php echo htmlspecialchars($_POST['manchas'])?>
 </body>
 </html>
