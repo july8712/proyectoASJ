@@ -99,8 +99,8 @@
             <form action="procesar.php" method="post">
                 
                     <label for="especie">Especie
-                        <select name="especie" id="especie">
-                            <option value="seleccionar">Seleccionar</option>
+                        <select name="especie" id="especie" required>
+                            <option value="">Seleccionar</option>
                             <option value="perro">Perro</option>
                             <option value="gato">Gato</option>
                         </select>
@@ -108,7 +108,7 @@
 
                     <label for="sexo">Sexo
                         <select name="sexo" id="sexo">
-                            <option value="seleccionar">Seleccionar</option>
+                            <option value="">Seleccionar</option>
                             <option value="macho">Macho</option>
                             <option value="hembra">Hembra</option>
                         </select>
@@ -116,31 +116,18 @@
 
                     <label for="edad">Edad
                         <select name="edad" id="edad">
-                            <option value="seleccionar">Seleccionar</option>
-                            <option value="0">Menos de 1 año</option>
-                            <option value="1">1 año</option>
-                            <option value="2">2 años</option>
-                            <option value="3">3 años</option>
-                            <option value="4">4 años</option>
-                            <option value="5">5 años</option>
-                            <option value="6">6 años</option>
-                            <option value="7">7 años</option>
-                            <option value="8">8 años</option>
-                            <option value="9">9 años</option>
-                            <option value="10">10 años</option>
-                            <option value="11">11 años</option>
-                            <option value="12">12 años</option>
-                            <option value="13">13 años</option>
-                            <option value="14">14 años</option>
-                            <option value="15">15 años</option>
-                            <option value="15oMas">+ 15 años </option>
+                            <option value="">Seleccionar</option>
+                            <option value="menor">Menos de 1 año</option>
+                            <option value="menos5">1 a 5 años</option>
+                            <option value="menos10">6 a 10 años</option>
+                            <option value="menos15">10 a 15 años</option>
+                            <option value="mayor15">+ 15 años </option>
                         </select>
                     </label>
 
                     <label for="color">Color
                         <select name="color" id="color">
-                            <option value="seleccionar">Seleccionar</option>
-                            <option value="todos">Todos</option>
+                            <option value="">Seleccionar</option>
                             <option value="blanco">Blanco</option>
                             <option value="negro">Negro</option>
                             <option value="chocolate">Chocolate</option>
@@ -151,20 +138,20 @@
 
                     <label for="manchas">Manchas / Rayas
                         <select name="manchas" id="manchas">
-                            <option value="seleccionar">Seleccionar</option>
+                            <option value="">Seleccionar</option>
                             <option value="blancas">Blancas</option>
                             <option value="negras">Negras</option>
-                            <option value="chocolate">Chocolate</option>
+                            <option value="manchasChocolate">Chocolate</option>
                             <option value="marrones">Marrón Claro</option>
                             <option value="grises">Grises</option>
                         </select>
                     </label>
-                    <input type="submit" value="Buscar">
+                    <input type="submit" value="Buscar" id="buscar">
             </form>
         </section>
 
         <section id="mascotas">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#foto1">
+            <div class="card perro macho menos5 blanco" data-bs-toggle="modal" data-bs-target="#foto1">
                 <div>
                     <img src="img/perros/pexels-dominic-buccilli-981062.jpg"
                      alt="Elephant at sunset">
@@ -199,7 +186,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto2">
+              <div class="card perro macho negro marrones" data-bs-toggle="modal" data-bs-target="#foto2">
                 <div>
                     <img src="img/perros/pexels-binyamin-mellish-169524.jpg"
                      alt="Matias">
@@ -234,7 +221,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto3">
+              <div class="card perro hembra menos5 negro blancas" data-bs-toggle="modal" data-bs-target="#foto3">
                 <div>
                     <img src="img/perros/pexels-helena-lopes-1938126.jpg"
                      alt="Luna">
@@ -268,7 +255,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto4">
+              <div class="card gato macho menos5 marron" data-bs-toggle="modal" data-bs-target="#foto4">
                 <div>
                     <img src="img/gatos/pexels-alena-koval-982300.jpg"
                      alt="Michifus">
@@ -303,10 +290,10 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto5">
+              <div class="card perro macho menor negro marrones" data-bs-toggle="modal" data-bs-target="#foto5">
                 <div>
                     <img src="img/perros/pexels-pixabay-257519.jpg"
-                     alt="Elephant at sunset">
+                     alt="Toby">
                 </div>
                 
                 <h3>Toby</h3>
@@ -338,7 +325,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto6">
+            <div class="card gato hembra menos10 marron negras" data-bs-toggle="modal" data-bs-target="#foto6">
                 <div>
                     <img src="img/gatos/pexels-inge-wallumrød-177809.jpg"
                      alt="Kala">
@@ -373,15 +360,13 @@
                   </div>
                 </div>
               </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto7">
+              <div class="card perro hembra menos5 marron blancas" data-bs-toggle="modal" data-bs-target="#foto7">
                 <div>
                     <img src="img/perros/pexels-muhannad-alatawi-58997.jpg"
                      alt="Lola">
                 </div>
                 
-                <h3>Lola</h3>
-            </div>
-            <div class="modal fade" id="foto7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <h3><div class="modal fade" id="foto7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -407,8 +392,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card" data-bs-toggle="modal" data-bs-target="#foto8">
+              </div>Lola</h3>
+            </div>
+            
+              <div class="card gato macho menos5 negro" data-bs-toggle="modal" data-bs-target="#foto8">
                 <div>
                     <img src="img/gatos/pexels-david-bartus-1510543.jpg"
                      alt="Negrito">

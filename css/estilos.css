@@ -361,3 +361,7 @@ footer{
 .redes ul li {
     font-size: 2rem;
 }
+
+.oculto {
+    display: none;
+}
