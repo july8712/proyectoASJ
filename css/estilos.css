@@ -35,15 +35,14 @@ nav ul li a{
     text-decoration: none;
     font-size: 1.6em;
     font-weight: bold;
+    border-bottom: transparent 2px solid;
 }
 
-#banner{
-    /* position: relative; */
+nav ul li a:hover{
+    color: #ef5030;
+    border-bottom: #ef5030 2px solid;
 }
 
-#banner img{
-    /* max-width: 100vw; */
-}
 
 h1, .carousel-caption h2 {
     color: white;
@@ -51,11 +50,10 @@ h1, .carousel-caption h2 {
     font-weight: bold;
 }
 
-h2{
+h2, #secContacto h1, #registro h1{
     color:#108896;
     font-weight: bold;
     font-size: 3.8em;
-    /* margin-bottom: 70px; */
 }
 
 #nosotros{
@@ -87,9 +85,7 @@ h2{
     text-align: left;
     margin-bottom: 30px;
 }
-.col2{
-    /* width: 50%; */
-}
+
 .col2 img{
     width:500px;
 }
@@ -123,10 +119,7 @@ p{
     align-items: center;
 }
 
-/* .carousel-caption{
-    position: obsolute;
-        
-} */
+
 
 .carousel-caption p{
     font-size: 2em;
@@ -155,7 +148,6 @@ p{
     width: 200%;
     border-radius: 50%;
     background-color: #108896;
-    /* z-index: 10; */
     opacity: 0.7;
 }
 
@@ -178,7 +170,6 @@ p{
     padding: 40px;
     border-radius: 100px;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +189,16 @@ select{
     font-size: 18px;
     font-weight: 600;
     padding: 4px;
+}
+
+#buscar:hover, .btnForm:hover{
+    color: rgb(252, 229, 200);
+    background-color: #108896;
+    border-color: rgb(252, 229, 200);
+}
+
+option:hover{
+    background-color: #ef5030 !important;
 }
 
 label{
@@ -307,6 +308,48 @@ input[type=submit]{
     column-gap: 50px;
     max-width: 1500px;
     margin: auto;
+}
+
+#secContacto, #registro{
+min-height: 80vh;
+/* background-color: #ef5030; */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 70px;
+}
+
+#secContacto h1{
+    color: #108896;
+}
+
+#secContacto form, #registro form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ef5030;padding: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+#secContacto form label, #registro form label{
+    color: white;
+}
+
+#secContacto form input, #secContacto form textarea, #registro form input{
+    padding: 10px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.btnForm{
+    width: 200px !important;
+
+}
+
+.contBtn{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
 }
 
 .fa-solid:hover{
